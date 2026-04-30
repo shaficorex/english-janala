@@ -33,8 +33,10 @@
 
     <header>
         <div class="navbar bg-base-100 shadow-sm">
-            <div class="navbar-start">
-                <div class="dropdown">
+            <div class="navbar-start sm:flex flex-row-reverse justify-between w-full">
+                <!-- w-full takes full width of its parent -->
+                <div class="dropdown dropdown-end"> 
+                    <!-- dropdown-end is a daisy ui class to open it from right -->
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -77,13 +79,17 @@
             <p class="font-bangla pb-4">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons
                 আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
 
-            <input class="mb-4" type="text" placeholder="Enter your Name"><br>
-            <input class="mb-4" type="text" placeholder="Enter your Passward"><br>
+            <input class="mb-4 text-[0.7rem]" type="text" placeholder="Enter your Name"><br>
+            <input class="mb-4 text-[0.7rem]" type="password" placeholder="Enter your Passward"><br>
             <button class="btn btn-active btn-primary">Primary</button>
         </div>
         <div class="image flex-1">
             <img src="./assets/hero-student.png" alt="">
         </div>
+    </section>
+
+    <section class="mt-5 w-11/12 m-auto text-center">
+        <h1 class=" font-bold text-4xl"><span class="text-blue-400">Let's </span>Learn Vocabularies</h1>
     </section>
 
 </body>
